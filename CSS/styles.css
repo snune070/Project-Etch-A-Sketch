@@ -8,6 +8,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
+    gap: 32px;
 }
 
 .menu {
@@ -39,8 +41,14 @@ button {
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     height: 400px;
     width: 400px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(var(--colNum), 1fr);
+    grid-template-rows: repeat(var(--rowNum), 1fr);
     padding: 0;
     margin: 0;
+}
+
+:root{
+    --rowNum: 16;
+    --colNum: 16;
 }
