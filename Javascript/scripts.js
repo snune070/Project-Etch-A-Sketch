@@ -29,6 +29,7 @@ black.addEventListener('click', function () {
 let random = document.getElementById('random');
 
 random.addEventListener('click', function () {
+
     let randomColors = Math.floor(Math.random() * 16777215).toString(16);
 
     const randomColor = document.querySelectorAll('.paint')
@@ -39,6 +40,19 @@ random.addEventListener('click', function () {
     }
 
 })
+
+let rainbow = document.getElementById('rainbow');
+
+rainbow.addEventListener('click', function (){
+    const rainbowColors = document.querySelectorAll('.paint');
+    for (let rainbowColor of rainbowColors) {
+        rainbowColor.addEventListener('mouseover', function (){
+            let randomColorGenerator = Math.floor(Math.random() * 16777215).toString(16);
+            rainbowColor.style.backgroundColor = "#" + randomColorGenerator;
+        })
+    }
+})
+
 
 
 let clear = document.getElementById('clear');
