@@ -54,7 +54,6 @@ rainbow.addEventListener('click', function (){
 })
 
 
-
 let clear = document.getElementById('clear');
 
 clear.addEventListener('click', function () {
