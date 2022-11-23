@@ -47,7 +47,6 @@ h1{
 }
 
 .canvas {
-    border: 1px solid transparent;
     background-color: white;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     height: 400px;
@@ -58,6 +57,11 @@ h1{
     padding: 0;
     margin: 0;
 }
+
+.paint{
+    border: 1px solid black;
+}
+
 
 :root {
     --rowNum: 16;
